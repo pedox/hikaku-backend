@@ -1,0 +1,96 @@
+
+
+// Import Bootstrap Compass integration
+@import "bootstrap-compass";
+
+// Import custom Bootstrap variables
+@import "bootstrap-variables";
+
+// Import Bootstrap for Sass
+@import "bootstrap";
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+header#main-header {
+  background: url(../img/main-bg.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 649px;
+  color: #fff;
+  h1.logo {
+    margin-top: 1em;
+    background: url(../img/logo.png);
+    width: 183px;
+    height: 50px;
+    display: block;
+  }
+  h1.tagline {
+    margin-top: 2.5em;
+    font-size: 4em;
+  }
+  h2.subline {
+    font-size: 2.5em;
+    span {
+      color: $brand-primary;
+    }
+  }
+}
+
+.main-content {
+  margin: {
+    top: 3em;
+    bottom: 3em;
+  }
+  h1 {
+    margin: 1em 0 2em;
+  }
+  text-align: center;
+}
+
+.promo-image {
+  background: url(../img/foot.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 553px;
+  margin-bottom: 3em;
+}
+
+.footer {
+  text-align: center;
+  margin: {
+    top: 3em;
+    bottom: 3em;
+  }
+  p {
+    margin-top: 1em;
+    color: $gray-light;
+  }
+}
+
+.icon {
+  width: 93px;
+  height: 87px;
+  margin: 0 auto;
+  display: block;
+  &.icon-waktu {
+    background: url(../img/clock.png);
+  }
+  &.icon-praktis {
+    background: url(../img/coffe.png);
+  }
+  &.icon-mudah {
+    background: url(../img/like.png);
+  }
+}
+
+#main-footer {
+  margin: {
+    top: 3em;
+    bottom: 5em;
+  }
+  color: $gray-light;
+}
